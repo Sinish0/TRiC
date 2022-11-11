@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/buttons.css' %}">
+    <title>{% block title %} {% endblock %}</title>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="dark-theme">
+
+    <div>
+        <nav class="page-navbar" data-spy="affix" data-offset-top="10">
+            <ul class="nav-navbar container">
+                <li class="nav-item"><a href="{% url 'home' %}" class="nav-link">Go back</a></li>
+                <li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About</a> </li>
+
+            </ul>
+        </nav><!-- end of page navbar -->
+    </div>
+<br><br>
+
+    <header class="text-xl-center">
+    <div class="text-xl-center">
+            <h2 class="card-header">TR!C Analysis</h2>
+                {% for i in text %}
+                    <p>{{ i }}</p>
+                {% endfor %}
+    </div><br>
+    </header>
+
+    <div>
+            <h3 class="header-mini">Mood of the tweet- Sentiment Analysis </h3>
+                {% for i in text %}
+                    <p>{{ i }}</p>
+                {% endfor %}<br>
+    </div>
+    <div><br>
+         <h1 class="text-lg-center">What is the tweet about?</h1>
+                {% for i in text %}
+                    <p>{{ i }}</p>
+                {% endfor %}</div>
+    <div><br><br><br>
+
+    <h3 class="text-center">About this</h3>
+                {% for i in text %}
+                    <p>{{ i }}</p>
+                {% endfor %}
+        <br>
+
+        <h3 class="text-center">About that</h3>
+                {% for i in text %}
+                    <p>{{ i }}</p>
+                {% endfor %}
+    <br>
+        <h3 class="text-center">The final about </h3>
+                {% for i in text %}
+                    <p>{{ i }}</p>
+                {% endfor %}
+
+    </div>
+
+<!-- footer -->
+        <footer class="footer">
+            <p class="infos">&copy; <script>document.write(new Date().getFullYear())</script> A TR!C Creation</p>
+            <span>|</span>
+        </footer>
+</body>

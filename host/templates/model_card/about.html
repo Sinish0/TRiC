@@ -1,0 +1,103 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{% static 'assets/vendors/themify-icons/css/themify-icons.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/css/dorang.css' %}">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="dark-theme">
+    
+    <!-- page navbar -->
+    <nav class="page-navbar" data-spy="affix" data-offset-top="10">
+        <ul class="nav-navbar container">
+            <li class="nav-item"><a href="{% url 'home' %}" class="nav-link">Go Back</a></li>
+        </ul>
+    </nav><!-- end of page navbar -->
+
+    <div class="theme-selector">
+        <a href="javascript:void(0)" class="spinner">
+            <i class="ti-paint-bucket"></i>
+        </a>
+        <div class="body">
+            <a href="javascript:void(0)" class="light"></a>
+            <a href="javascript:void(0)" class="dark"></a>
+        </div>
+    </div>  
+
+    <!-- page header -->
+    <header class="header">
+        <div class="overlay"></div>
+            <div class="header-content">
+                <h1 class="header-title">Meet the team</h1>
+                <h6>The team consists of all kinds of talent</h6>
+            </div>
+    </header><!-- end of page header -->
+
+
+    <header class="header">
+        <div class="container page-container">
+    
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <a href="javascript:void(0)" class="overlay-img">
+                        <img src="{% static 'assets/imgs/harsh.jpg' %}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, weber Landing page">
+                        <div class="overlay"></div> 
+                        <div class="des">
+                            <h1 class="title">Niffoxic</h1>
+                            <p class="subtitle">Project Manager, Backend Developer & AI Model Deployment</p>
+                            <p>I'm a Passionate Data Scientist/Researcher who likes to do freelancing on his free time.</p>
+                        </div>          
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="javascript:void(0)" class="overlay-img">
+                        <img src="{% static 'assets/imgs/ishaan.jpg' %}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, weber Landing page">
+                        <div class="overlay"></div> 
+                        <div class="des">
+                            <h1 class="title">Ishaan Bhasin </h1>
+                            <p class="subtitle">Lead Designer & Data Architecture</p>
+                            <p>A creative and personable personality who refuses to be bound by the conventional norms of society. Wants to grow up to be famous.</p>
+                        </div>          
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="javascript:void(0)" class="overlay-img">
+                        <img src="{% static 'assets/imgs/sandy_last.jpg' %}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, weber Landing page">
+                        <div class="overlay"></div> 
+                        <div class="des">
+                            <h1 class="title">Rahul</h1>
+                            <p class="subtitle">Full Stack Developer</p>
+                            <p>Passionate Backend Developers and foodie person</p>
+                        </div>          
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header><!-- end of page header -->
+
+    
+            <!-- footer -->
+            <footer class="footer">
+                <p class="infos">&copy; <script>document.write(new Date().getFullYear())</script>, Made with <i class="ti-heart text-danger"></i> by <a href="http://www.devcrud.com">Team niffo</a></p>       
+                <span>|</span>  
+                <div class="links">
+                    <a href="#">About</a>
+                </div>
+            </footer><!-- end of footer -->
+
+
+    <!-- core  -->
+    <script src="{% static 'assets/vendors/jquery/jquery-3.4.1.js' %}"></script>
+    <script src="{% static 'assets/vendors/bootstrap/bootstrap.bundle.js' %}"></script>
+
+    <!-- bootstrap affix -->
+    <script src="{% static 'assets/vendors/bootstrap/bootstrap.affix.js' %}"></script>
+
+    <!-- Dorang js -->
+    <script src="{% static 'assets/js/dorang.js' %}"></script>
+
+</body>
+</html>

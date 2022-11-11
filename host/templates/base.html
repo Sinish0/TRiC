@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/buttons.css' %}">
+    <title>{% block title %} {% endblock %}</title>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="dark-theme">
+        <!-- page navbar -->
+    <nav class="page-navbar" data-spy="affix" data-offset-top="10">
+        <ul class="nav-navbar container">
+            <li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About Us</a></li>
+        </ul>
+    </nav><!-- end of page navbar -->
+
+    <div class="theme-selector">
+        <a href="javascript:void(0)" class="spinner">
+            <i class="ti-paint-bucket"></i>
+        </a>
+        <div class="body">
+            <a href="javascript:void(0)" class="light"></a>
+            <a href="javascript:void(0)" class="dark"></a>
+        </div>
+    </div>
+
+            <!-- page header -->
+    <header class="header">
+        <div class="overlay"></div>
+        {% block header %} {% endblock %}
+    </header><!-- end of page header -->
+
+    {% block body %} {% endblock %}
+
+
+            <!-- footer -->
+        <footer class="footer">
+            <p class="infos">&copy; <script>document.write(new Date().getFullYear())</script>, Made by Fox Team</p>
+            <span>|</span>
+        </footer>
+
+    <!-- core  -->
+    <script src="{%  static 'assets/vendors/jquery/jquery-3.4.1.js' %}"></script>
+    <script src="{% static 'assets/vendors/bootstrap/bootstrap.bundle.js' %}"></script>
+
+    <!-- bootstrap affix -->
+    <script src="{% static 'assets/vendors/bootstrap/bootstrap.affix.js' %}"></script>
+
+    <!-- Dorang js -->
+    <script src="{% static 'assets/js/dorang.js' %}"></script>
+
+</body>
+</html>
+
+

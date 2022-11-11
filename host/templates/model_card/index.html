@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %} Tweet-u {% endblock %}
+
+
+{% block header %}
+    <div class="header-content">
+            <h1 class="header-title">Do you even tweet bro?</h1>
+        <br>
+        <i class="fa fa-twitter"></i>
+<br>
+            <h6 class="header-subtitle">brb imma die but scroll down no shame in that</h6>
+    </div>
+{% endblock %}
+
+
+{% block body %}
+
+<div id="Tweet"><br></div><br>
+    <div class="col-md-10 col-lg-8 m-auto">
+        <form action="{% url 'generate_text' %}" class="askquestion">
+
+            <input type="text" size="240" name="input_text" class="form-control" placeholder="Enter your tweet" />
+            <button class="button-2" type="submit" value="generate_text"> Analyse </button>
+        </form>
+        <div class="modal"></div>
+</div>
+{% endblock %}
