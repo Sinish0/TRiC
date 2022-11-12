@@ -10687,6 +10687,7 @@ button.bg-dark:focus {
 }
 
 .text-left {
+  padding-left:2cm;
   text-align: left !important;
 }
 
